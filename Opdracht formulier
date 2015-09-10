@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulier</title>
+</head>
+<body>
+    <main>
+        <h1>Aanmelden</h1>
+
+        <p>Bent u geïnteresseerd in samenwerken met CMD Amsterdam? Dat kan!
+            Tijdens de opleiding werken studenten aan projecten voor echte opdrachtgevers. Ook
+            lopen de studenten stage, in het tweede en afstudeerjaar.</p>
+        <p style="font-style: italic;">CMD Amsterdam zoekt altijd naar positieve verbindingen met de creatieve stad
+            Amsterdam.
+        </p>
+        <p>Voor het aanmelden van stageplekken of projecten kunt u onderstaand formulier invullen.
+            Wij nemen zo nodig contact met u op nadat het formulier is verstuurd.
+            Voor vragen of opmerkingen kunt u <a href="#">contact</a> met ons opnemen.
+        </p>
+
+        <form>
+           <fieldset>
+               <legend>Contactgegevens:</legend>
+                    Naam:<input type="text"><br>
+                    Bedrijf:<input type="text"><br>
+                    Adres:<input type="text"><br>
+                    Postcode:<input type="text"><br>
+                    Plaats:<input type="text"><br>
+                    Telefoon:<input type="number"><br>
+                    Email:<input type="email"><br>
+            </fieldset>
+            <fieldset>
+                <legend>Ik wil mijn aanmelden:</legend>
+                    <input type="radio" name="type" value="Project">Voor een project<br>
+                    <input type="radio" name="type" value="Stage">Als stagebedrijf<br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Project</legend>
+                    1. Titel<input type="text"><br>
+                    2. Opdrachtomschrijving<input type="text"><br>
+                    3. Doelgroepomschrijving<input type="text"><br>
+                    4. Doelstelling/ intentie van het project<input type="text"><br>
+                    5. Looptijd<input type="text"><br>
+                    6. Deadline<input type="date"><br>
+                    <br>
+                    Geschikt voor<br>
+                    1. eerstejaars studenten<input type="checkbox" name="Geschikt voor, Project" value="eerstejaars"><br>
+                    2. tweedejaars studenten<input type="checkbox" name="Geschikt voor, Project" value="tweedejaars"><br>
+                    3. derdejaars studenten<input type="checkbox" name="Geschikt voor, Project" value="derdejaars"><br>
+                    4. afstudeer studenten<input type="checkbox" name="Geschikt voor, Project" value="afstudeer"><br>
+                    5. onbekend<input type="checkbox" name="Geschikt voor, Project" value="onbekend"><br>
+                    <br>
+                    opmerking <input type="text"><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Stage</legend>
+                    Geschikt voor<br>
+                    1. tweedejaars studenten<input type="checkbox" name="Geschikt voor, Stage" value="afstudeer"><br>
+                    2. afstudeer studenten<input type="checkbox" name="Geschikt voor, Stage" value="afstudeer"><br>
+                    3. onbekend<input type="checkbox" name="Geschikt voor, Stage" value="afstudeer"><br>
+                    <br>
+                    Hoe lang is de stage?<br>
+                    - 10 weken<input type="radio" name="lengte" value="10 weken"><br>
+                    - 20 weken<input type="radio" name="lengte" value="20 weken"><br>
+                    <br>
+                    2. Begin datum<input type="date"><br>
+                    <br>
+                    Beschrijving werkzaamheden:<br>
+                    1. Beschrijving stagewerkzaamheden<input type="text"><br>
+                    <br>
+                    Beschrijving stagebedrijf<br>
+                    1. Bedrijfsnaam<input type="text"><br>
+                    2. Adres<input type="text"><br>
+                    3. postcode<input type="text"><br>
+                    4. Plaats<input type="text"><br>
+                    5. Sector<input type="text"><br>
+                    6. Core Business<input type="text"><br>
+                    Opmerking<input type="text"><br>
+            </fieldset>
+        </form>
+
+    </main>
+
+</body>
+</html>
