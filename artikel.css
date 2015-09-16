@@ -1,0 +1,52 @@
+body {
+    font-family: Open Sans, Helvetica, Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+section {
+    border-style: solid;
+    border-radius: 0.5em;
+    border-color: #ffcc00;
+    margin: 3em 6em 3em 6em;
+    padding: 0em 1em 1em 1em;
+    background-color: #ffcc00;
+    box-shadow: 10px 10px 5px #dddddd;
+}
+
+fieldset {
+    border-style: solid;
+    border-radius: 0.5em;
+    border-color: #bbbbbb;
+    margin: 0em 5em 1em 5em;
+    padding: 1em 1em 1em 1em;
+    background-color: #bbbbbb;
+}
+
+fieldset p {
+    text-decoration: underline;
+}
+
+legend {
+    padding-top: 2.5em;
+    font-weight: 700;
+}
+
+a {
+    color: grey
+}
+
+section img {
+    width: 40%;
+    height: 40%;
+    float: left;
+    margin: 0em 1em 1em 0em;
+}
+
+section:last-child ol {
+    list-style-type: decimal;
+    list-style-position: inside;
+}
+
