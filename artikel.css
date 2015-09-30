@@ -1,26 +1,234 @@
+/*fonts*/
 body {
-    font-family: Open Sans, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
-h1 {
-    text-align: center;
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
 }
 
-section {
-    border-style: solid;
-    border-radius: 0.5em;
-    border-color: #ffcc00;
-    margin: 3em 6em 3em 6em;
-    padding: 0em 1em 1em 1em;
+aside h1, body > div > section h1 {
+    font-size: 0.9em;
+}
+
+aside h2, body > div > section h2 {
+    font-size: 1.1em;
+}
+
+aside h3, body > div > section h3 {
+    font-size: 0.9em;
+}
+
+aside h4, body > div > section h4 {
+    font-size: 0.85em;
+}
+
+blockquote {
+    font-style: italic;
+}
+
+aside p, body > div > section p, body > footer {
+    font-size: 0.85em;
+}
+/*fonts*/
+
+
+.text {
+    display: flex;
+    flex: 1 0 auto;
+    flex-direction: column;
+    padding: 1.5em;
+}
+
+body > header {
     background-color: #ffcc00;
-    box-shadow: 10px 10px 5px #dddddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
+header img {
+    width: 20%;
+    min-width: 15%;
+    padding: 1em 1em 1em 1em;
+    display: flex;
+    align-self: flex-start;
+    order: -1;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav li {
+    color: black;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    margin: 0.5em 0.5em 0.5em 0.5em;
+    background-color: #bbbbbb;
+    list-style-type: none;
+    border: #bbbbbb;
+    border-radius: 0.3em;
+}
+
+main article {
+    display: flex;
+    flex-direction: column;
+    padding: 0 2em;
+    order: -1;
+}
+
+.related {
+    display: flex;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    flex-direction: row;
+    flex-wrap: wrap;
+    order: 0;
+}
+
+.related article, .related section {
+    display: flex;
+    background-color: red;
+    border-radius: 1em;
+    padding: 0.5em;
+    flex-direction: column;
+    margin-top: 1em;
+}
+
+aside {
+    display: flex;
+    background-color: #dddddd;
+    border: #dddddd;
+    border-radius: 0.3em;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    flex-direction: column;
+    order: 1;
+    height: auto;
+}
+
+a {
+    color: grey
+}
+
+section:last-child ol {
+    list-style-type: decimal;
+    list-style-position: inside;
+}
+
+
+/* Footer */
+body > footer {
+    clear:both;
+    width: 100%;
+    background-color: #bbbbbb;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    order: 2;
+}
+
+body > footer section {
+    display: flex;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    align-self: flex-start;
+    flex-direction: column;
+    flex: 0 0 100%;
+}
+
+body > footer > p {
+    display: flex;
+    align-self: flex-end;
+}
+/* Footer */
+
+
+@media (min-width: 50em) {
+    .text {
+        flex-direction: row;
+    }
+
+    main article {
+        flex: 1;
+        order: 0;
+    }
+
+    aside {
+        flex: 0 0 12em;
+        order: -1;
+    }
+
+    .related {
+        order: 1;
+    }
+
+    body > footer section {
+    flex: 1;
+    }
+}
+
+@media (min-width: 79em) {
+    .text {
+        flex-direction: row;
+    }
+
+    main article {
+        flex: 1;
+        order: 0;
+    }
+
+    aside {
+        flex: 0 0 12em;
+        order: -1;
+    }
+
+    .related {
+        order: 1;
+        flex: 0 0 15em;
+    }
+
+    body > footer section {
+    flex: 1;
+    }
+}
+
+@media (min-width: 100em) {
+    .text {
+        flex-direction: row;
+    }
+
+    main article {
+        flex: 1;
+        order: 0;
+    }
+
+    aside {
+        flex: 0 0 15em;
+        order: -1;
+    }
+
+    .related {
+        order: 1;
+        flex: 0 0 15em;
+    }
+
+    body > footer section {
+        flex: 1;
+    }
+}
+
+/*formulier*/
 fieldset {
     border-style: solid;
     border-radius: 0.5em;
     border-color: #bbbbbb;
-    margin: 0em 5em 1em 5em;
     padding: 1em 1em 1em 1em;
     background-color: #bbbbbb;
 }
@@ -34,19 +242,7 @@ legend {
     font-weight: 700;
 }
 
-a {
-    color: grey
+label {
+    display: block;
 }
-
-section img {
-    width: 40%;
-    height: 40%;
-    float: left;
-    margin: 0em 1em 1em 0em;
-}
-
-section:last-child ol {
-    list-style-type: decimal;
-    list-style-position: inside;
-}
-
+/*formulier*/
