@@ -2,6 +2,7 @@
 <html lang="nl">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Formulierpagina</title>
         <link rel="stylesheet" href="artikel.css">
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,600' rel='stylesheet' type='text/css'>
@@ -55,7 +56,7 @@
                     <h3>Ontwerpopleiding voor Interactieve Media</h3>
                     <p>CMD Amsterdam stelt ontwerpen centraal in de opleiding. Zij wil studenten leren te denken als een ontwerper en opleiden tot interactieve media ontwerpers met een goede aansluiting op de huidige én de toekomstige beroepspraktijk.</p>
                     <p><em>CMD Amsterdam is een ontwerpopleiding die studenten opleidt om te denken als een ontwerper bij het ontwikkelen van interactieve toepassingen;</em></p>
-                    <p>CMD Amsterdam gelooft in het 'human centered' ontwerpproces. Wij zien een steeds grotere rol weggelegd voor ontwerpers die in staat zijn om te kijken naar de menselijke kant van interactieve media. In onze visie ontwikkelt de 'human centered' aanpak zich steeds meer naar het bestuderen van de mens in zijn sociale en maatschappelijke context als aanleiding voor en onderbouwing van interactieve media concepten. Daarnaast blijft het belangrijk om te kijken naar de mens op het moment dat hij in aanraking komt met interactieve media, zijn gedrag serieus te nemen en te verwerken in het ontwerpproces. CMDA ziet dan ook een meerwaarde in het inbedden van toegepast onderzoek en prototyping in het curriculum en wil studenten hierin helpen en stimuleren.</p>
+                    <p>CMD Amsterdam gelooft in hetb 'human centered' ontwerpproces. Wij zien een steeds grotere rol weggelegd voor ontwerpers die in staat zijn om te kijken naar de menselijke kant van interactieve media. In onze visie ontwikkelt de 'human centered' aanpak zich steeds meer naar het bestuderen van de mens in zijn sociale en maatschappelijke context als aanleiding voor en onderbouwing van interactieve media concepten. Daarnaast blijft het belangrijk om te kijken naar de mens op het moment dat hij in aanraking komt met interactieve media, zijn gedrag serieus te nemen en te verwerken in het ontwerpproces. CMDA ziet dan ook een meerwaarde in het inbedden van toegepast onderzoek en prototyping in het curriculum en wil studenten hierin helpen en stimuleren.</p>
                     <p><em>Bij CMD Amsterdam staat de mens centraal, niet alleen als eindgebruiker van een ontwikkelde toepassing maar ook als mens met <a href="#opbouw" title="opbouw studieprogramma">sociaal-maatschappelijke context</a>;</em></p>
                     <p>CMD Amsterdam heeft een kernprogramma dat alle studenten moeten volgen. De propedeuse is opgebouwd uit 12 kernvakken en 3 projecten. In jaar 2 en 3 kunnen studenten, naast een kernprogramma, een set profileringsvakken kiezen. Hiermee kunnen ze zich in meer of mindere mate richten op een van de vijf beroepen waar de opleiding voor opleidt.</p>
                 </section>
@@ -68,7 +69,7 @@
                 <section>
                     <h3>Beroepen</h3>
                     <h4>Waar leiden we voor op?</h4>
-                    <img src="images/beroepen.jpg" alt="Beroepen waar CMD voor opleidt: Frontend Developer, Visual Designer, Interaction Designer, Content Manager, Projectmanager.">
+                    <img src="img/beroepen.jpg" alt="Beroepen waar CMD voor opleidt: Frontend Developer, Visual Designer, Interaction Designer, Content Manager, Projectmanager.">
                     <p>Studenten kunnen na deze opleiding aan het werk in een grote diversiteit aan beroepen in het interactieve media werkveld. Tijdens de opleiding kunnen zij zich – naast het generieke kernprogramma – middels de profileringsvakken individueel ontwikkelen.</p>
                     <p>Afgestudeerde studenten komen daarmee in aanmerking voor o.a. de volgende vijf beroepen: Visual Interface Designer, Frontend Developer, Projectmanager, Contentmanager en Interaction Designer. Variaties hierop zijn natuurlijk mogelijk.</p>
                     <p>Mocht je als aankomend student meer willen weten of contact op willen nemen met een afgestudeerde student? Neem <a href="#">contact</a> met ons op.</p>
