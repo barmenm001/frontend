@@ -2,9 +2,9 @@
 body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 }
 
 p {
@@ -37,6 +37,11 @@ aside p, body > div > section p, body > footer {
 }
 /*fonts*/
 
+/*header*/
+header h1 + p{
+    text-shadow: 0.3em 0.3em 0.3em #111111;
+    text-align: center;
+}
 
 .text {
     display: flex;
@@ -77,7 +82,26 @@ nav li {
     list-style-type: none;
     border: #bbbbbb;
     border-radius: 0.3em;
+    display: flex;
+    justify-content: center;
+    transition: 2s;
+    transform: rotate(7deg);
 }
+
+nav li:nth-child(2n+2) {
+    transform: rotate(353deg);
+}
+
+nav li:nth-child(2n+2):hover {
+    background-color: #cccccc;
+    transform: rotate(0deg);
+}
+
+nav li:nth-child(2n+1):hover {
+    background-color: #cccccc;
+    transform: rotate(360deg);
+}
+/*header*/
 
 main article {
     display: flex;
@@ -94,13 +118,14 @@ main article {
     order: 0;
 }
 
-.related article, .related section {
+.related article {
     display: flex;
     background-color: red;
     border-radius: 1em;
     padding: 0.5em;
     flex-direction: column;
     margin-top: 1em;
+    box-shadow: 0.3em 0.3em 0.3em #cccccc;
 }
 
 aside {
@@ -121,6 +146,10 @@ a {
 section:last-child ol {
     list-style-type: decimal;
     list-style-position: inside;
+}
+
+article img {
+    width: 100%;
 }
 
 
@@ -172,6 +201,12 @@ body > footer > p {
     body > footer section {
     flex: 1;
     }
+
+    label {
+    display: flex;
+    flex-direction: column;
+    height: 3em;
+}
 }
 
 @media (min-width: 79em) {
@@ -226,15 +261,18 @@ body > footer > p {
 
 /*formulier*/
 fieldset {
-    border-style: solid;
-    border-radius: 0.5em;
-    border-color: #bbbbbb;
     padding: 1em 1em 1em 1em;
-    background-color: #bbbbbb;
+    background-color: #dddddd;
+    border: 0;
 }
 
 fieldset p {
     text-decoration: underline;
+}
+
+input[type="text"], input[type="tel"], input[type="email"],input[type="date"], textarea  {
+    background-color: aqua;
+    padding: 0.4em;
 }
 
 legend {
@@ -243,6 +281,7 @@ legend {
 }
 
 label {
-    display: block;
+    display: flex;
+    flex-direction: row;
 }
 /*formulier*/
