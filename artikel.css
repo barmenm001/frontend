@@ -39,7 +39,7 @@ aside p, body > div > section p, body > footer {
 
 /*header*/
 header h1 + p{
-    text-shadow: 0.3em 0.3em 0.3em #111111;
+    text-shadow: 0.3em 0.3em 0.3em #555;
     text-align: center;
 }
 
@@ -112,7 +112,6 @@ main article {
 
 .related {
     display: flex;
-    padding: 0.5em 0.5em 0.5em 0.5em;
     flex-direction: row;
     flex-wrap: wrap;
     order: 0;
@@ -149,6 +148,10 @@ section:last-child ol {
 }
 
 article img {
+    width: 100%;
+}
+
+video {
     width: 100%;
 }
 
@@ -195,6 +198,7 @@ body > footer > p {
     }
 
     .related {
+        flex: 0 0 12em;
         order: 1;
     }
 
@@ -226,7 +230,7 @@ body > footer > p {
 
     .related {
         order: 1;
-        flex: 0 0 15em;
+        flex: 0 0 12em;
     }
 
     body > footer section {
@@ -285,3 +289,7 @@ label {
     flex-direction: row;
 }
 /*formulier*/
+
+.hide {
+    display: none;
+}
