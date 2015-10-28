@@ -6,8 +6,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="artikel.css">
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,600' rel='stylesheet' type='text/css'>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <script type='text/javascript' src='script.js'></script>
     </head>
     <body>
 
@@ -15,7 +13,7 @@
         <header>
             <h1>CMD Amsterdam - Intranet</h1>
             <p>Communication and Multimedia Design is een ontwerpopleiding voor interactieve media in Amsterdam.</p>
-            <img src="img/cmd_logo.png" alt="">
+            <img src="img/logo.svg" alt="logo">
             <nav>
                 <ul>
                     <li><a href="#">Home</a></li>
@@ -515,6 +513,6 @@
             <p id="feedback"><a href="#">Geef ons feedback</a></p>
 
         </footer>
-
+    <script type='text/javascript' src='script.js'></script>
     </body>
 </html>
