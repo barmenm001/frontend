@@ -72,6 +72,7 @@ nav ul {
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
+        -webkit-padding-start: 0em;
 }
 
 nav li {
@@ -85,16 +86,15 @@ nav li {
     display: flex;
     justify-content: center;
     transition: 2s;
-    transform: rotate(7deg);
 }
 
 nav li:nth-child(2n+2) {
-    transform: rotate(353deg);
+    transition: 2s;
 }
 
 nav li:nth-child(2n+2):hover {
     background-color: #cccccc;
-    transform: rotate(0deg);
+    transform: rotate(-360deg);
 }
 
 nav li:nth-child(2n+1):hover {
@@ -106,25 +106,45 @@ nav li:nth-child(2n+1):hover {
 main article {
     display: flex;
     flex-direction: column;
-    padding: 0 2em;
     order: -1;
 }
 
 .related {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    order: 0;
+    margin-top: 1em;
 }
 
 .related article {
     display: flex;
-    background-color: red;
-    border-radius: 1em;
+    background-color: #20DEC9;
+    border-radius: 0.3em;
     padding: 0.5em;
     flex-direction: column;
-    margin-top: 1em;
     box-shadow: 0.3em 0.3em 0.3em #cccccc;
+    margin-top: 1em;
+}
+
+.related p, .related dl, .related a, .related li {
+        font-size: 0.8em;
+}
+
+.related ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.related li {
+    background-color: #7EEAFF;
+    border-radius: 0.3em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    text-align: center;
+    margin-bottom: 0.4em;
+    color: black;
+}
+
+.related li a {
+    color: black;
+    font-weight: 800;
 }
 
 aside {
@@ -136,10 +156,11 @@ aside {
     flex-direction: column;
     order: 1;
     height: auto;
+    margin-top: 2em;
 }
 
 a {
-    color: grey
+    color: grey;
 }
 
 section:last-child ol {
@@ -155,15 +176,50 @@ video {
     width: 100%;
 }
 
+/*formulier*/
+fieldset {
+    padding: 1em 1em 1em 1em;
+    background-color: #dddddd;
+    border: 0;
+}
+
+fieldset p {
+    text-decoration: underline;
+}
+
+input[type="text"], input[type="tel"], input[type="email"],input[type="date"], textarea  {
+    border-radius: 0.3em;
+    padding: 1em;
+    border: none;
+    margin-top: 0.6em;
+}
+
+legend {
+    padding-top: 2.5em;
+    font-weight: 700;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+}
+
+label em {
+    font-size: 0.7em;
+}
+
+form fieldset > label {
+    margin-left: 1em;
+}
+/*formulier*/
 
 /* Footer */
 body > footer {
-    clear:both;
     width: 100%;
     background-color: #bbbbbb;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: column;
     order: 2;
 }
 
@@ -190,16 +246,23 @@ body > footer > p {
     main article {
         flex: 1;
         order: 0;
+        padding: 0 2em;
     }
 
     aside {
         flex: 0 0 12em;
         order: -1;
+        margin-top: 0;
     }
 
     .related {
         flex: 0 0 12em;
         order: 1;
+        margin-top: 0;
+    }
+
+    body > footer {
+        flex-direction: row;
     }
 
     body > footer section {
@@ -210,7 +273,39 @@ body > footer > p {
     display: flex;
     flex-direction: column;
     height: 3em;
-}
+    }
+
+    .related ul {
+    font-size: 0.7em;
+    }
+
+    fieldset:first-of-type label em {
+        margin-left: 11em;
+        display: block;
+    }
+
+    fieldset:first-of-type label, fieldset:nth-of-type(3) label, fieldset:nth-of-type(4) label {
+        display: block;
+    }
+
+    fieldset:first-of-type label span {
+        display: inline-block;
+        width: 7em;
+    }
+
+    fieldset:nth-of-type(2) label {
+        flex-direction: row;
+    }
+
+    fieldset:nth-of-type(3) label span, fieldset:nth-of-type(4) label span, fieldset:nth-of-type(5) label span {
+        display: inline-block;
+        width: 14em;
+    }
+
+    textarea {
+        height: 1em;
+    }
+
 }
 
 @media (min-width: 79em) {
@@ -221,16 +316,23 @@ body > footer > p {
     main article {
         flex: 1;
         order: 0;
+        padding: 0 2em;
     }
 
     aside {
         flex: 0 0 12em;
         order: -1;
+        margin-top: 0;
     }
 
     .related {
         order: 1;
         flex: 0 0 12em;
+        margin-top: 0;
+    }
+
+    body > footer {
+        flex-direction: row;
     }
 
     body > footer section {
@@ -246,49 +348,31 @@ body > footer > p {
     main article {
         flex: 1;
         order: 0;
+        padding: 0 2em;
     }
 
     aside {
         flex: 0 0 15em;
         order: -1;
+        margin-top: 0;
     }
 
     .related {
         order: 1;
         flex: 0 0 15em;
+        margin-top: 0;
+    }
+
+    body > footer {
+        flex-direction: row;
     }
 
     body > footer section {
         flex: 1;
     }
+
 }
 
-/*formulier*/
-fieldset {
-    padding: 1em 1em 1em 1em;
-    background-color: #dddddd;
-    border: 0;
-}
-
-fieldset p {
-    text-decoration: underline;
-}
-
-input[type="text"], input[type="tel"], input[type="email"],input[type="date"], textarea  {
-    background-color: aqua;
-    padding: 0.4em;
-}
-
-legend {
-    padding-top: 2.5em;
-    font-weight: 700;
-}
-
-label {
-    display: flex;
-    flex-direction: row;
-}
-/*formulier*/
 
 .hide {
     display: none;
